@@ -22,8 +22,8 @@ export default function ProjectCard2({ flat = false }) {
       }
     >
       <div className="flex flex-col gap-8">
-        <div className="flex min-h-[182px] items-center justify-between gap-6 overflow-hidden rounded-[8px] bg-[#ffe159] p-6 pl-16 sm:py-6 sm:pl-[80px]">
-          <div className="flex w-[230px] shrink-0 flex-col gap-3">
+        <div className="flex flex-col gap-6 overflow-hidden rounded-[8px] bg-[#ffe159] p-6 sm:px-10 sm:py-8 xl:min-h-[182px] xl:flex-row xl:items-center xl:justify-between xl:py-6 xl:pl-[80px]">
+          <div className="flex w-full shrink-0 flex-col gap-3 xl:w-[230px]">
             <div>
               <p className="text-[28px] font-extrabold text-[#4d4b46] sm:text-[32px]">
                 Humini Biz
@@ -37,21 +37,21 @@ export default function ProjectCard2({ flat = false }) {
             </span>
           </div>
 
-          <div className="relative hidden h-[182px] w-[350px] shrink-0 -ml-[60px] xl:block">
+          <div className="relative aspect-[350/182] w-full shrink-0 xl:w-[350px] xl:-ml-[60px]">
             <img
               src={phoneLeft}
               alt=""
-              className="absolute top-[45px] left-0 w-[165px] drop-shadow-xl"
+              className="absolute top-[24.73%] left-0 w-[47.14%] drop-shadow-xl"
             />
             <img
               src={phoneRight}
               alt=""
-              className="absolute top-[43px] left-[186px] w-[164px] drop-shadow-xl"
+              className="absolute top-[23.63%] left-[53.14%] w-[46.86%] drop-shadow-xl"
             />
             <img
               src={phoneCenter}
               alt="Humini Biz app home screen"
-              className="absolute top-[4px] left-[74px] w-[203px] drop-shadow-2xl"
+              className="absolute top-[2.20%] left-[21.14%] w-[58%] drop-shadow-2xl"
             />
           </div>
         </div>

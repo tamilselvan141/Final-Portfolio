@@ -23,8 +23,8 @@ export default function ProjectCard1({ flat = false }) {
       }
     >
       <div className="flex flex-col gap-8">
-        <div className="flex min-h-[196px] items-center justify-between gap-6 overflow-hidden rounded-[8px] border-2 border-white bg-[#0084fc]">
-          <div className="flex shrink-0 flex-col gap-3 py-6 pl-6 sm:py-10 sm:pl-10">
+        <div className="flex flex-col gap-6 overflow-hidden rounded-[8px] border-2 border-white bg-[#0084fc] xl:min-h-[196px] xl:flex-row xl:items-center xl:justify-between">
+          <div className="flex shrink-0 flex-col gap-3 px-6 pt-6 sm:px-10 sm:pt-10 xl:py-10 xl:pl-10">
             <div>
               <p className="max-w-[340px] text-2xl leading-tight font-extrabold text-white sm:text-[28px]">
                 Global Summit Coordination Platform
@@ -38,27 +38,37 @@ export default function ProjectCard1({ flat = false }) {
             </span>
           </div>
 
-          <div className="relative hidden h-[196px] w-[478px] shrink-0 xl:block">
-            <img src={ellipse} alt="" className="absolute top-0 left-[347px] size-[131px]" />
-            <img src={ellipse} alt="" className="absolute top-[3px] left-0 size-[131px]" />
-            {/* Principals table — rightmost, behind */}
-            <img
-              src={mockupA}
-              alt=""
-              className="absolute top-[36px] left-[242px] h-[147px] w-[207px] rounded-[8px] object-cover shadow-lg"
-            />
-            {/* Meeting status overview — leftmost, behind */}
-            <img
-              src={mockupB}
-              alt=""
-              className="absolute top-[38px] left-[17px] h-[145px] w-[204px] rounded-[8px] object-cover shadow-lg"
-            />
-            {/* Directory grid — centered, largest, in front */}
-            <img
-              src={mockupC}
-              alt="Global Summit Coordination Platform principal directory"
-              className="absolute top-[5px] left-[106px] h-[191px] w-[269px] rounded-[8px] object-cover shadow-xl"
-            />
+          <div className="w-full shrink-0 px-6 pb-6 sm:px-10 sm:pb-8 xl:w-[478px] xl:px-0 xl:pb-0">
+            <div className="relative aspect-[478/196] w-full">
+              <img
+                src={ellipse}
+                alt=""
+                className="absolute top-0 left-[72.59%] aspect-square w-[27.41%]"
+              />
+              <img
+                src={ellipse}
+                alt=""
+                className="absolute top-[1.53%] left-0 aspect-square w-[27.41%]"
+              />
+              {/* Principals table — rightmost, behind */}
+              <img
+                src={mockupA}
+                alt=""
+                className="absolute top-[18.37%] left-[50.63%] aspect-[207/147] w-[43.31%] rounded-[8px] object-cover shadow-lg"
+              />
+              {/* Meeting status overview — leftmost, behind */}
+              <img
+                src={mockupB}
+                alt=""
+                className="absolute top-[19.39%] left-[3.56%] aspect-[204/145] w-[42.68%] rounded-[8px] object-cover shadow-lg"
+              />
+              {/* Directory grid — centered, largest, in front */}
+              <img
+                src={mockupC}
+                alt="Global Summit Coordination Platform principal directory"
+                className="absolute top-[2.55%] left-[22.18%] aspect-[269/191] w-[56.28%] rounded-[8px] object-cover shadow-xl"
+              />
+            </div>
           </div>
         </div>
 

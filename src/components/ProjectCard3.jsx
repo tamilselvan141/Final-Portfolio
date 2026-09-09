@@ -23,7 +23,7 @@ export default function ProjectCard3({ flat = false }) {
       }
     >
       <div className="flex flex-col gap-8">
-        <div className="flex min-h-[190px] items-center justify-between gap-6 overflow-hidden rounded-[8px] border-2 border-white bg-[#0084fc] p-6 sm:p-10">
+        <div className="flex flex-col gap-6 overflow-hidden rounded-[8px] border-2 border-white bg-[#0084fc] p-6 sm:p-10 xl:min-h-[190px] xl:flex-row xl:items-center xl:justify-between">
           <div className="flex shrink-0 flex-col gap-1.5 text-[#e1fbfb]">
             <p className="max-w-[290px] text-[27px] leading-tight font-extrabold">
               Redesigning Airport Crew Transportation
@@ -31,23 +31,31 @@ export default function ProjectCard3({ flat = false }) {
             <p className="text-sm font-semibold">1-Week Airport UX Hackathon</p>
           </div>
 
-          <div className="relative hidden h-[190px] w-[350px] shrink-0 -ml-[70px] xl:block">
-            <img src={ellipse} alt="" className="absolute top-[19px] left-[219px] size-[131px]" />
-            <img src={ellipse} alt="" className="absolute top-[19px] left-0 size-[131px]" />
+          <div className="relative aspect-[350/190] w-full shrink-0 xl:w-[350px] xl:-ml-[70px]">
+            <img
+              src={ellipse}
+              alt=""
+              className="absolute top-[10%] left-[62.57%] aspect-square w-[37.43%]"
+            />
+            <img
+              src={ellipse}
+              alt=""
+              className="absolute top-[10%] left-0 aspect-square w-[37.43%]"
+            />
             <img
               src={phoneLeft}
               alt=""
-              className="absolute top-[42px] left-0 w-[160px] drop-shadow-xl"
+              className="absolute top-[22.11%] left-0 w-[45.71%] drop-shadow-xl"
             />
             <img
               src={phoneRight}
               alt=""
-              className="absolute top-[44px] left-[196px] w-[154px] drop-shadow-xl"
+              className="absolute top-[23.16%] left-[56%] w-[44%] drop-shadow-xl"
             />
             <img
               src={phoneCenter}
               alt="Airport crew transportation app pickup screen"
-              className="absolute top-[-8px] left-[78px] w-[195px] drop-shadow-2xl"
+              className="absolute top-[-4.21%] left-[22.29%] w-[55.71%] drop-shadow-2xl"
             />
           </div>
         </div>
